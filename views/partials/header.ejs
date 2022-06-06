@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Cognitive Exam Portal</title>
+
+  <!-- bootstrap cdn -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+  <!-- external css files -->
+  <link rel="stylesheet" href="/css/styles.css">
+
+  <!-- header part with topmost nav-bar, sidebar menu with toggle
+  button & the name of project as heading....-->
+  <nav class="navbar navbar-default">
+    <div class="container">
+
+      <!-- three line nav-bar -->
+      <script type="text/javascript">
+      function togglemenu(){
+        document.getElementById("sidebar").classList.toggle('active');
+      }
+      </script>
+
+      <div>
+        <div id="sidebar" onclick="togglemenu()">
+          <div id="toggle-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div id="options">
+            <ul>
+              <li id="profile"><a href="/profile">Profile</a></li>
+              <li id="query"><a href="/query">Query</a></li>
+              <li id="reset-password"><a href="/reset-password">Reset Password</a></li>
+              <li id="sign-out"><a href="/logout">Sign-out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- main heading of name.... -->
+      <div class="navbar-header">
+        <p class="navbar-brand">Cognitive Exam Portal</p>
+      </div>
+
+      <!-- top nav-bar... -->
+      <ul class="nav navbar-nav navbar-right">
+        <li id="home"><a href="/">HOME</a></li>
+        <li id="about"><a href="/about">ABOUT US</a></li>
+        <li id="contact"><a href="/contact">CONTACT US</a></li>
+        <li id="log-out"><a href="/logout">LOG-OUT</a></li>
+      </ul>
+    </div>
+  </nav>
+</head>
+
+<body>
+  <div class="container">

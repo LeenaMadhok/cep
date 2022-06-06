@@ -1,0 +1,31 @@
+<%- include ("partials/header")-%>
+<h1 class="title">Queries</h1>
+<div class="title-text">
+  <form class="" action="index.html" method="post">
+
+    <div >
+      <label>Query type :-</label>
+      <select id="dropdown" class="fill">
+        <option disabled selected value>Select your query type.</option>
+        <option>Exam Dates</option>
+        <option>Subject Details</option>
+        <option>Regarding Result</option>
+        <option>Exam Questions</option>
+        <option>Others</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Your Doubt :-</label>
+      <textarea max=100 type="text" placeholder="Enter your query here." ></textarea>
+    </div>
+
+    <center>
+      <div>
+        <button type="button" name="button" class="change-post">Post</button>
+      </div>
+    </center>
+
+  </form>
+</div>
+<%- include ("partials/footer")-%>
