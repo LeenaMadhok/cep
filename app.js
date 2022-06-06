@@ -63,7 +63,7 @@ app.get("/profile",function(req,res){
     res.render("profile");
 });
 
-// response to "/test" route
+// response to "/exam /test" route
 app.get("/exam/test",function(req,res){
     console.log("test page");
     res.render("test");
