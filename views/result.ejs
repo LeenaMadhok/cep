@@ -1,6 +1,33 @@
 <%- include("partials/header") -%>
 <h1 class="title">Result</h1>
-<div class="title-text">
-  <p>Different files for marks of subjects to be displayed with the status of student as pass/ failed.</p>
+<div class="date-table">
+  <!-- <p>Different files for marks of subjects to be displayed with the status of student as pass/ failed.</p> -->
+  <table style="width:100%">
+      <thead>
+          <th>
+              <tr>
+                  <td><b>Subject Name</b></td>
+                  <td><b>Subject Result</b></td>
+              </tr>
+          </th>
+      </thead>
+      <tr>
+        <td>Subject 1</td>
+        <td><button type="button" name="button" style="text-decoration: none;"><a href="/result/marks">Result</a></button></td>
+      </tr>
+      <tr>
+        <td>Subject 2</td>
+        <td><button type="button" name="button"><a href="/result/marks">Result</a></button></td>
+      </tr>
+      <tr>
+        <td>Subject 3</td>
+        <td><button type="button" name="button"><a href="/result/marks">Result</a></button></td>
+      </tr>
+      <tr>
+        <td>Subject 4</td>
+        <td><button type="button" name="button"><a href="/result/marks">Result</a></button></td>
+      </tr>
+  </table>
+
 </div>
 <%- include("partials/footer") -%>
