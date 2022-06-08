@@ -1,4 +1,4 @@
 # cep
-cognitive exam portal
-its uses html,css,ejs,jquery,node,express,mongodb,& so on....
-this is my minor project
+cognitive exam portal.
+It uses html,css,ejs,jquery,node,express,mongodb,& so on....
+This is my minor project
