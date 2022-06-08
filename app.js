@@ -5,6 +5,7 @@ const ejs = require("ejs");
 const lodash =require("lodash");
 
 const app = express();
+
 const logoutContent="Your are log-out of the system !!!"
 
 //setting-up ejs as view engine
@@ -24,13 +25,13 @@ app.get("/",function(req,res){
 //response of "/about" route
 app.get("/about",function(req,res){
     console.log("about page");
-    res.render("about"); //,{aboutText:aboutContent}
+    res.render("about");
 });
 
 //response of "/contact" route
 app.get("/contact",function(req,res){
     console.log("contact page");
-    res.render("contact");  //,{contactText:contactContent}
+    res.render("contact");
 });
 
 //response of "/exam" route
@@ -67,6 +68,18 @@ app.get("/profile",function(req,res){
 app.get("/exam/test",function(req,res){
     console.log("test page");
     res.render("test");
+});
+
+// response to "/exam/thank" route
+app.get("/exam/thank",function(req,res){
+  console.log("thank you page");
+  res.render("thank");
+});
+
+// response to "/result/marks" route
+app.get("/result/marks", function(req,res){
+  console.log("marks of particular subject.");
+  res.render("marks");
 });
 
 //response of "/logout" route
