@@ -1,0 +1,83 @@
+<%- include("partials/header1") -%>
+<!-- <h1 class="title">Test Screen</h1> -->
+<h3>Question set</h3>
+<h5><b>*Minimum of 5 question can be added for a particular exam in form of MCQs.*</b></h5>
+<div class="test-text">
+  <form action="/teacher/question-paper" class="q-a-setting" method="post">
+    <label for="SubjectName">Subject Name :</label>
+    <input type="text" class="fill" name="subject_name" autocomplete="off">
+
+    <hr>
+
+    <label for="Questions">Question 1:</label>
+    <input type="text" class="fill" name="newQuestion" autocomplete="off">
+    <label for="">Options for question 1:</label>
+    <input type="text" class="opt" name="option1" autocomplete="off">
+    <input type="text" class="opt" name="option2" autocomplete="off">
+    <input type="text" class="opt" name="option3" autocomplete="off">
+    <input type="text" class="opt" name="option4" autocomplete="off">
+    <label for="">Correct answer :</label>
+    <input type="text" class="fill" name="correct_ans" autocomplete="off">
+    <label for="">Marks :</label>
+    <input type="number" class="fill" name="marks" autocomplete="off">
+
+    <!-- <hr>
+
+    <label for="">Question 2:</label>
+    <input type="text" class="fill" name="newQuestion" autocomplete="off">
+    <label for="">Options for question 2:</label>
+    <input class="opt" type="text" name="option1" autocomplete="off">
+    <input class="opt" type="text" name="option2" autocomplete="off">
+    <input class="opt" type="text" name="option3" autocomplete="off">
+    <input type="text" class="opt" name="option4" autocomplete="off">
+    <label for="">Correct answer :</label>
+    <input type="text" class="fill" name="correct_ans" autocomplete="off">
+    <label for="">Marks :</label>
+    <input type="number" class="fill" name="marks" autocomplete="off">
+
+    <hr>
+
+    <label for="">Question 3:</label>
+    <input type="text" class="fill" name="newQuestion" autocomplete="off">
+    <label for="">Options for question 3:</label>
+    <input type="text" class="opt" name="option1" autocomplete="off">
+    <input type="text" class="opt" name="option2" autocomplete="off">
+    <input type="text" class="opt" name="option3" autocomplete="off">
+    <input type="text" class="opt" name="option4" autocomplete="off">
+    <label for="">Correct answer :</label>
+    <input type="text" class="fill" name="correct_ans" autocomplete="off">
+    <label for="">Marks :</label>
+    <input type="number" class="fill" name="marks" autocomplete="off">
+
+    <hr>
+
+    <label for="">Question 4:</label>
+    <input type="text" class="fill" name="newQuestion" autocomplete="off">
+    <label for="">Options for question 4:</label>
+    <input type="text" class="opt" name="option1" autocomplete="off">
+    <input type="text" class="opt" name="option2" autocomplete="off">
+    <input type="text" class="opt" name="option3" autocomplete="off">
+    <input type="text" class="opt" name="option4" autocomplete="off">
+    <label for="">Correct answer :</label>
+    <input type="text" class="fill" name="correct_ans" autocomplete="off">
+    <label for="">Marks :</label>
+    <input type="number" class="fill" name="marks" autocomplete="off">
+
+    <hr>
+
+    <label for="">Question 5:</label>
+    <input type="text" class="fill" name="newQuestion" autocomplete="off">
+    <label for="">Options for question 5:</label>
+    <input type="text" class="opt" name="option1" autocomplete="off">
+    <input type="text" class="opt" name="option2" autocomplete="off">
+    <input type="text" class="opt" name="option3" autocomplete="off">
+    <input type="text" class="opt" name="option4" autocomplete="off">
+    <label for="">Correct answer :</label>
+    <input type="text" class="fill" name="correct_ans" autocomplete="off">
+    <label for="">Marks :</label>
+    <input type="number" class="fill" name="marks" autocomplete="off"> -->
+    <center>
+      <button type="submit" class="btn btn-success" name="home" onClick="alert('added to db');">Save</button>
+  </form>
+</div>
+<%- include("partials/footer") -%>

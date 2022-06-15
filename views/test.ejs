@@ -1,40 +1,50 @@
 <%- include("partials/header") -%>
 <!-- <h1 class="title">Test Screen</h1> -->
 <div class="test-text">
+  <h2>Web Technology</h2>
+  <%questions.forEach(function(ques){%>
+    <div class="outer">
 
-  <h2>Subject-Name</h2>
-  <div class="outer">
-
-    <div class="insider1">
-      <div class="">
-
-        <p>Questions</p>
-        <div class="">
-          <p>Marks</p>
+      <div class="insider1">
+        <div class="ques-part">
+          <p><%= ques.ques %></p>
+          <p style="margin:0 1%;padding:0 1px; background-color:#fff;">Marks: <%= ques.marks %> </p>
         </div>
-        <div class="">
-          <p>Answers</p>
+        <div class="ans-part">
+          <p><input class="ans" type="radio" name="option1" value=""><%= ques.option1 %></p>
+    			<p><input class="ans" type="radio" name="option2" value=""><%= ques.option2 %></p>
+          <p><input class="ans" type="radio" name="option3" value=""><%= ques.option3 %></p>
+    			<p><input class="ans" type="radio" name="option4" value=""><%= ques.option4 %></p>
         </div>
-        <div class="">
-          <button type="button" name="button">Mark & Review</button>
-          <button type="button" name="button">Save</button>
+        <div class="button-part">
+          <center>
+            <button type="submit" class="btn btn-info" name="button" style="font-size:20px;padding:1%;">Save</button>
+          </center>
         </div>
+      </div>
 
+      <div class="insider2">
+        <div class="submit-button">
+          <button type="submit" class="btn btn-success" name="button">Submit</button>
+        </div>
       </div>
     </div>
+  <%})%>
 
-    <div class="insider2">
-      <p>hello</p>
-      <div class="">
-        <p>Question list</p>
-      </div>
-      <div class="">
-        <button type="button" name="button">Submit</button>
-      </div>
-    </div>
-
-  </div>
 
 </div>
 <a href="/exam/thank">here to thanks page</a>
 <%- include("partials/footer") -%>
+
+<!--
+<label for="Questions">Question 1:</label>
+<input type="text" class="fill" name="newQuestion" autocomplete="off">
+<label for="">Options for question 1:</label>
+<input type="text" class="opt" name="option1" autocomplete="off">
+<input type="text" class="opt" name="option2" autocomplete="off">
+<input type="text" class="opt" name="option3" autocomplete="off">
+<input type="text" class="opt" name="option4" autocomplete="off">
+<label for="">Correct answer :</label>
+<input type="text" class="fill" name="correct_ans" autocomplete="off">
+<label for="">Marks :</label>
+<input type="number" class="fill" name="marks" autocomplete="off"> -->
