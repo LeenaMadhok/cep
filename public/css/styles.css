@@ -161,7 +161,7 @@ thead td{
 }
 
 .title-text{
-  margin: 0% 5%;
+  margin: 0% 5% 5%;
   padding: 3%;
   text-align: justify;
   line-height: 2.0;
@@ -173,7 +173,16 @@ thead td{
 	display:block;
 	border-radius: 2px;
 	border-color: #001;
-	width: 100%;
+	width: 80%;
+	height:35px;
+	padding:5px;
+}
+
+.opt{
+	display:block;
+	border-radius: 2px;
+	border-color: #001;
+	width: 50%;
 	height:35px;
 	padding:5px;
 }
@@ -252,7 +261,29 @@ textarea{
   margin: 1%;
   padding: 2%;
 }
+.insider1{
+  width: 80%;
+}
+.insider2{
+  width: 20%;
+  text-align: center;
+  padding: 11% 0 0 0;
+}
+.tt{
+  padding-left:1%;
+}
 
-.test-text h2{
-  padding-left:1%; 
+form{
+  margin: 1%;
+  padding: 2% 8% 0 20%;
+}
+
+.ques-part{
+  display:flex;
+}
+
+.ans-part{
+  background-color: #F1F0F0;
+  margin: 1%;
+  padding: 1% 3%;
 }
